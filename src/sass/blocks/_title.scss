@@ -1,0 +1,42 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    &_fs14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fs16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fs20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fs48 {
+        font-size: 48px;
+    }
+    &_line {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 110%;
+            width: 60px;
+            border: 2px solid $main-color;
+        }
+    }
+    &_section-title {
+        position: relative;
+        text-align: center;
+        @include before_cercle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &_section-subtitle {  
+        text-align: center;   
+    }
+}
